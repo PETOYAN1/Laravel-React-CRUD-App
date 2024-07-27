@@ -11,8 +11,8 @@ export const SkillCreate = () => {
   return (
     <>
     <Header />
-    <div className='mt-16'>
-        <form onSubmit={storeSkill} className='max-w-md mx-auto p-6 bg-white rounded-sm'>
+    <div className='mt-16 pt-[8em]'>
+        <form onSubmit={storeSkill} className='max-w-md mx-auto p-6 bg-white dark:bg-slate-950 dark:text-white rounded-sm'>
             <div className='space-y-6'>
                 <div className='mb-4'>
                     <label htmlFor="name" className='block mb-2 text-sm font-medium'>Name</label>
@@ -25,7 +25,7 @@ export const SkillCreate = () => {
                      {errors.slug && <span className="text-sm text-red-400">{errors.slug[0]}</span>}                   
                 </div>
             </div>
-            <div className="my-4">
+            <div className="mt-5">
                 <button className="px-4 py-2 bg-indigo-500 hover:bg-indigo-700 text-white rounded-md">Create</button>
             </div>
         </form>

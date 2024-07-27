@@ -1,4 +1,0 @@
-[submodule "Back-end"]
-	ignore = untracked
-[submodule]
-	Back-end = .ignore
